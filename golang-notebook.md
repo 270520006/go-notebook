@@ -43,3 +43,42 @@ go version go1.17.8 windows/amd64
 >- `/src`：包含源代码构建脚本和标准库的包的完整源代码（Go 是一门开源语言）
 >- `/src/cmd`：包含 Go 和 C 的编译器和命令行脚本
 
+* 写个简单的例子玩玩，随便找个地方创建hello.go
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("hello, world")
+}
+```
+
+* 执行编译
+
+```bash
+zhusp@zhusp MINGW64 /d/学习资料/golang-notebook (main)
+$ go run hello.go
+Hello World!
+```
+
+* 或者使用二进制编译使用
+
+```
+zhusp@zhusp MINGW64 /d/学习资料/golang-notebook (main)
+$ go build hello.go
+
+zhusp@zhusp MINGW64 /d/学习资料/golang-notebook (main)
+$ ./hello
+Hello World!
+
+```
+
+
+
+## 数据类型
+
+​	因为笔者有学过java的基础，所以想要快速上手一门语言，肯定要先从数据类型开始。
+
+​	
